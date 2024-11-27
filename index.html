@@ -134,18 +134,14 @@
               </p>
 
               <div class="position-relative mt-4">
-                <link href="assets/img/about-2.webp" rel="icon" type="image/webp">
-               
-                <!-- about-2 padrão (16x16, 32x32, 48x48) -->
-                <link rel="icon" href="assets/img/about-2-16x16.webp" sizes="16x16" type="image/webp">
-                <link rel="icon" href="assets/img/about-2-32x32.webp" sizes="32x32" type="image/webp">
-                <link rel="icon" href="assets/img/about-2-48x48.webp" sizes="48x48" type="image/webp">
-
-                <!-- about-2 para telas de alta resolução (96x96) -->
-                <link rel="icon" href="assets/img/about-2-96x96.webp" sizes="96x96" type="image/webp">
-
-                <!-- about-2 para dispositivos de tela Retina (192x192) -->
-                <link rel="icon" href="assets/img/about-2-192x192.webp" sizes="192x192" type="image/webp">
+                <picture>  
+                 <!-- Imagem padrão -->
+                <img src="assets/img/about-2.webp" alt="" class="img-fluid">
+                  
+                <!-- Imagem para dispositivos menores -->
+                <source srcset="assets/img/about-2-192x192.webp" media="(max-width: 600px)" type="image/webp"> 
+                  
+                </picture>
                 <a href="https://www.youtube.com/watch?v=8PYEsjg8ulI" class="glightbox pulsating-play-btn"></a>
               </div>
             </div>
