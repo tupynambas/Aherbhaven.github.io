@@ -9,9 +9,22 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
+  <picture>
   <link href="assets/img/favicon.webp" rel="icon" type="image/webp">
   <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon" type="image/webp">
+     
+  <!-- Favicon padrão (16x16, 32x32, 48x48) -->
+  <link rel="icon" href="assets/img/favicon-16x16.webp" sizes="16x16" type="image/webp">
+  <link rel="icon" href="assets/img/favicon-32x32.webp" sizes="32x32" type="image/webp">
+  <link rel="icon" href="assets/img/favicon-48x48.webp" sizes="48x48" type="image/webp">
 
+  <!-- Favicon para telas de alta resolução (96x96) -->
+  <link rel="icon" href="assets/img/favicon-96x96.webp" sizes="96x96" type="image/webp">
+
+  <!-- Favicon para dispositivos de tela Retina (192x192) -->
+  <link rel="icon" href="assets/img/favicon-192x192.webp" sizes="192x192" type="image/webp">
+  <picture>
+    
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -124,8 +137,17 @@
 
               <div class="position-relative mt-4">
                 <picture>
-                <source srcset="assets/img/about-2.webp" type="image/webp">
-                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
+                <!-- Imagem para telas pequenas (ex. smartphones) -->
+                <source srcset="assets/img/about-2-small.webp" media="(max-width: 600px)" type="image/webp">
+  
+                <!-- Imagem para telas médias (ex. tablets) -->
+                <source srcset="assets/img/about-2-medium.webp" media="(max-width: 1024px)" type="image/webp">
+  
+                <!-- Imagem para telas grandes (ex. desktops) -->
+                <source srcset="assets/img/about-2-large.webp" media="(min-width: 1025px)" type="image/webp">
+  
+                <!-- Imagem fallback para navegadores que não suportam WebP -->
+                <img src="assets/img/about-2.jpg" class="img-fluid" alt="Descrição da imagem">
                 </picture>
                 <a href="https://www.youtube.com/watch?v=8PYEsjg8ulI" class="glightbox pulsating-play-btn"></a>
               </div>
@@ -195,10 +217,19 @@
     <!-- Stats Section -->
     <section id="stats" class="stats section dark-background">
 
-      <picture>
-      <source srcset="assets/img/stats-bg.webp" type="image/webp">
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-      </picture>
+    <picture>
+    <!-- Imagem WebP para telas pequenas (ex. smartphones) -->
+    <source srcset="assets/img/stats-bg-small.webp" media="(max-width: 600px)" type="image/webp">
+
+    <!-- Imagem WebP para telas médias (ex. tablets) -->
+    <source srcset="assets/img/stats-bg-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+    <!-- Imagem WebP para telas grandes (ex. desktops) -->
+    <source srcset="assets/img/stats-bg-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+    <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+    <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+    </picture>
 
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
@@ -289,7 +320,21 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.webp" class="glightbox"><img src="assets/img/menu/menu-item-1.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-1-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-1-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-1-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-1-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-1.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Senna Tea</h4>
                 <p class="ingredients">
                   Senna leaves
@@ -300,7 +345,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.webp" class="glightbox"><img src="assets/img/menu/menu-item-2.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-2-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-2-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-2-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+             <!-- Imagem para telas grandes (ex. desktops) -->
+             <source srcset="assets/img/menu/menu-item-2-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+             <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+             <img src="assets/img/menu/menu-item-2.jpg" class="menu-img img-fluid" alt="">
+             </picture>
+             </a>
                 <h4>Mbor Mbor tea</h4>
                 <p class="ingredients">
                   Mbor Mbor & mint leaves 
@@ -311,7 +370,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.webp" class="glightbox"><img src="assets/img/menu/menu-item-3.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-3-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-3-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-3-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-3-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-3.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Hibiscus Mint Tea</h4>
                 <p class="ingredients">
                   Hibiscus flowers & Mint
@@ -322,7 +395,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.webp" class="glightbox"><img src="assets/img/menu/menu-item-4.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-4-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-4-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-4-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-4-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-4.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Her Tea</h4>
                 <p class="ingredients">
                   Five types of leaves
@@ -333,7 +420,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.webp" class="glightbox"><img src="assets/img/menu/menu-item-5.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-5-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-5-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-5-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-5-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-5.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Moringa Tea</h4>
                 <p class="ingredients">
                   Moringa leaves
@@ -344,7 +445,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.webp" class="glightbox"><img src="assets/img/menu/menu-item-6.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-6-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-6-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-6-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-6-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-6.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Kinkiliba Tea</h4>
                 <p class="ingredients">
                   Kinkiliba leaves Combretum
@@ -367,7 +482,21 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.webp" class="glightbox"><img src="assets/img/menu/menu-item-1.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-1-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-1-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-1-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-1-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-1.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Senna Tea</h4>
                 <p class="ingredients">
                   Senna leaves
@@ -378,7 +507,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.webp" class="glightbox"><img src="assets/img/menu/menu-item-2.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-2-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-2-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-2-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-2-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-2.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Mbor Mbor Tea</h4>
                 <p class="ingredients">
                   Mbor Mbor & mint leaves
@@ -389,7 +532,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.webp" class="glightbox"><img src="assets/img/menu/menu-item-3.webp" class="menu-img img-fluid" alt=""></a>  
+                <a href="assets/img/menu/menu-item-3-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-3-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-3-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-3-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-3.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Hibiscus Mint Tea</h4>
                 <p class="ingredients">
                   Hibiscus flowers & Mint
@@ -400,7 +557,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.webp" class="glightbox"><img src="assets/img/menu/menu-item-4.webp" class="menu-img img-fluid" alt=""></a>
+               <a href="assets/img/menu/menu-item-4-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-4-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-4-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-4-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-4.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Her Tea</h4>
                 <p class="ingredients">
                   Five types of leaves
@@ -411,7 +582,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.webp" class="glightbox"><img src="assets/img/menu/menu-item-5.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-5-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-5-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-5-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-5-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-5.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Moringa Tea</h4>
                 <p class="ingredients">
                   Moringa leaves
@@ -422,7 +607,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.webp" class="glightbox"><img src="assets/img/menu/menu-item-6.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-6-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-6-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-6-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-6-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-6.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Kinkiliba Tea</h4>
                 <p class="ingredients">
                   Kinkiliba leaves Combretum 
@@ -445,7 +644,21 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.webp" class="glightbox"><img src="assets/img/menu/menu-item-1.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-1-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-1-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-1-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-1-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-1.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Senna Tea</h4>
                 <p class="ingredients">
                   Senna leaves
@@ -456,7 +669,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.webp" class="glightbox"><img src="assets/img/menu/menu-item-2.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-2-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-2-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-2-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-2-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-2.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Mbor Mbor Tea</h4>
                 <p class="ingredients">
                   Mbor Mbor & mint leaves
@@ -467,7 +694,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.webp" class="glightbox"><img src="assets/img/menu/menu-item-3.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-3-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-3-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-3-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-3-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-3.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Hibiscus Mint Tea</h4>
                 <p class="ingredients">
                   Hibiscus flowers & Mint
@@ -478,7 +719,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.webp" class="glightbox"><img src="assets/img/menu/menu-item-4.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-4-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-4-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-4-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-4-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-4.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Her Tea</h4>
                 <p class="ingredients">
                   Five types of leaves
@@ -489,7 +744,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.webp" class="glightbox"><img src="assets/img/menu/menu-item-5.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-5-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-5-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-5-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-5-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-5.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Moringa Tea</h4>
                 <p class="ingredients">
                   Moringa leaves
@@ -500,7 +769,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.webp" class="glightbox"><img src="assets/img/menu/menu-item-6.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-6-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-6-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-6-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-6-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-6.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Kinkiliba Tea</h4>
                 <p class="ingredients">
                   Kinkiliba leaves Combretum
@@ -523,7 +806,21 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.webp" class="glightbox"><img src="assets/img/menu/menu-item-1.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-1-large.webp" class="glightbox">
+             <picture>
+             <!-- Imagem para telas pequenas (ex. smartphones) -->
+             <source srcset="assets/img/menu/menu-item-1-small.webp" media="(max-width: 600px)" type="image/webp">
+
+             <!-- Imagem para telas médias (ex. tablets) -->
+             <source srcset="assets/img/menu/menu-item-1-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+             <!-- Imagem para telas grandes (ex. desktops) -->
+             <source srcset="assets/img/menu/menu-item-1-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+             <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+             <img src="assets/img/menu/menu-item-1.jpg" class="menu-img img-fluid" alt="">
+             </picture>
+             </a>
                 <h4>Senna Tea</h4>
                 <p class="ingredients">
                   Senna leaves
@@ -534,7 +831,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.webp" class="glightbox"><img src="assets/img/menu/menu-item-2.webp" class="menu-img img-fluid" alt=""></a>
+               <a href="assets/img/menu/menu-item-2-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-2-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-2-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-2-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+             <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+             <img src="assets/img/menu/menu-item-2.jpg" class="menu-img img-fluid" alt="">
+             </picture>
+             </a>
                 <h4>Mbor Mbor Tea</h4>
                 <p class="ingredients">
                   Mbor Mbor & mint leaves
@@ -545,7 +856,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.webp" class="glightbox"><img src="assets/img/menu/menu-item-3.webp" class="menu-img img-fluid" alt=""></a>
+               <a href="assets/img/menu/menu-item-3-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-3-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-3-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-3-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-3.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Hibiscus Mint Tea</h4>
                 <p class="ingredients">
                   Hibiscus flowers & Mint
@@ -556,7 +881,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.webp" class="glightbox"><img src="assets/img/menu/menu-item-4.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-4-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-4-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-4-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+               <!-- Imagem para telas grandes (ex. desktops) -->
+               <source srcset="assets/img/menu/menu-item-4-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+               <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+               <img src="assets/img/menu/menu-item-4.jpg" class="menu-img img-fluid" alt="">
+               </picture>
+               </a>
                 <h4>Her Tea</h4>
                 <p class="ingredients">
                   Five types of leaves
@@ -567,7 +906,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.webp" class="glightbox"><img src="assets/img/menu/menu-item-5.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-5-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-5-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-5-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-5-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-5.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Moringa Tea</h4>
                 <p class="ingredients">
                   Moringa leaves
@@ -578,7 +931,21 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.webp" class="glightbox"><img src="assets/img/menu/menu-item-6.webp" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/menu/menu-item-6-large.webp" class="glightbox">
+              <picture>
+              <!-- Imagem para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/menu/menu-item-6-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem para telas médias (ex. tablets) -->
+              <source srcset="assets/img/menu/menu-item-6-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/menu/menu-item-6-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Imagem fallback (JPEG) para navegadores que não suportam WebP -->
+              <img src="assets/img/menu/menu-item-6.jpg" class="menu-img img-fluid" alt="">
+              </picture>
+              </a>
                 <h4>Kinkiliba Tea</h4>
                 <p class="ingredients">
                   Kinkiliba leaves Combretum
@@ -614,9 +981,18 @@
             <div class="team-member">
               <div class="member-img">
                 <picture>
-                <source srcset="assets/img/chefs/chefs-1.webp" type="image/webp">
-                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-                </picture>
+              <!-- Imagem WebP para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/chefs/chefs-1-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem WebP para telas médias (ex. tablets) -->
+              <source srcset="assets/img/chefs/chefs-1-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem WebP para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/chefs/chefs-1-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Fallback para navegadores que não suportam WebP -->
+              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="Descrição do chef">
+              </picture>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -636,9 +1012,18 @@
             <div class="team-member">
               <div class="member-img">
                 <picture>
-                <source srcset="assets/img/chefs/chefs-2.webp" type="image/webp">
-                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-                </picture>
+              <!-- Imagem WebP para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/chefs/chefs-2-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem WebP para telas médias (ex. tablets) -->
+              <source srcset="assets/img/chefs/chefs-2-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem WebP para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/chefs/chefs-2-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Fallback para navegadores que não suportam WebP -->
+              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="Descrição do chef">
+              </picture>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -658,10 +1043,18 @@
             <div class="team-member">
               <div class="member-img">
                 <picture>
-                <source srcset="assets/img/chefs/chefs-3.webp" type="image/webp">
-                <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-                </picture>
-                <div class="social">
+              <!-- Imagem WebP para telas pequenas (ex. smartphones) -->
+              <source srcset="assets/img/chefs/chefs-3-small.webp" media="(max-width: 600px)" type="image/webp">
+
+              <!-- Imagem WebP para telas médias (ex. tablets) -->
+              <source srcset="assets/img/chefs/chefs-3-medium.webp" media="(max-width: 1024px)" type="image/webp">
+
+              <!-- Imagem WebP para telas grandes (ex. desktops) -->
+              <source srcset="assets/img/chefs/chefs-3-large.webp" media="(min-width: 1025px)" type="image/webp">
+
+              <!-- Fallback para navegadores que não suportam WebP -->
+              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="Descrição do chef">
+              </picture>
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
@@ -725,15 +1118,118 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.webp"><img src="assets/img/gallery/gallery-1.webp" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.webp"><img src="assets/img/gallery/gallery-2.webp" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.webp"><img src="assets/img/gallery/gallery-3.webp" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.webp"><img src="assets/img/gallery/gallery-4.webp" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.webp"><img src="assets/img/gallery/gallery-5.webp" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.webp"><img src="assets/img/gallery/gallery-6.webp" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.webp"><img src="assets/img/gallery/gallery-7.webp" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.webp"><img src="assets/img/gallery/gallery-8.webp" class="img-fluid" alt=""></a></div>
-          </div>
+            <div class="swiper-slide">
+          <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1-large.webp">
+        <picture>
+        <!-- Imagem para telas pequenas -->
+        <source srcset="assets/img/gallery/gallery-1-small.webp" media="(max-width: 600px)" type="image/webp">
+        <!-- Imagem para telas médias -->
+        <source srcset="assets/img/gallery/gallery-1-medium.webp" media="(max-width: 1024px)" type="image/webp">
+        <!-- Imagem para telas grandes -->
+        <source srcset="assets/img/gallery/gallery-1-large.webp" media="(min-width: 1025px)" type="image/webp">
+        <!-- Fallback -->
+        <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="Descrição da imagem">
+      </picture>
+      </a>
+      </div>
+            <div class="swiper-slide">
+         <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2-large.webp">
+      <picture>
+        <!-- Imagem para telas pequenas -->
+        <source srcset="assets/img/gallery/gallery-2-small.webp" media="(max-width: 600px)" type="image/webp">
+        <!-- Imagem para telas médias -->
+        <source srcset="assets/img/gallery/gallery-2-medium.webp" media="(max-width: 1024px)" type="image/webp">
+        <!-- Imagem para telas grandes -->
+        <source srcset="assets/img/gallery/gallery-2-large.webp" media="(min-width: 1025px)" type="image/webp">
+        <!-- Fallback -->
+        <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="Descrição da imagem">
+      </picture>
+      </a>
+      </div>
+            <div class="swiper-slide">
+         <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3-large.webp">
+      <picture>
+        <!-- Imagem para telas pequenas -->
+        <source srcset="assets/img/gallery/gallery-3-small.webp" media="(max-width: 600px)" type="image/webp">
+        <!-- Imagem para telas médias -->
+        <source srcset="assets/img/gallery/gallery-3-medium.webp" media="(max-width: 1024px)" type="image/webp">
+        <!-- Imagem para telas grandes -->
+        <source srcset="assets/img/gallery/gallery-3-large.webp" media="(min-width: 1025px)" type="image/webp">
+        <!-- Fallback -->
+        <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="Descrição da imagem">
+      </picture>
+      </a>
+      </div>
+            <div class="swiper-slide">
+         <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4-large.webp">
+      <picture>
+        <!-- Imagem para telas pequenas -->
+        <source srcset="assets/img/gallery/gallery-4-small.webp" media="(max-width: 600px)" type="image/webp">
+        <!-- Imagem para telas médias -->
+        <source srcset="assets/img/gallery/gallery-4-medium.webp" media="(max-width: 1024px)" type="image/webp">
+        <!-- Imagem para telas grandes -->
+        <source srcset="assets/img/gallery/gallery-4-large.webp" media="(min-width: 1025px)" type="image/webp">
+        <!-- Fallback -->
+        <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="Descrição da imagem">
+      </picture>
+      </a>
+      </div>
+            <div class="swiper-slide">
+          <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5-large.webp">
+      <picture>
+        <!-- Imagem para telas pequenas -->
+        <source srcset="assets/img/gallery/gallery-5-small.webp" media="(max-width: 600px)" type="image/webp">
+        <!-- Imagem para telas médias -->
+        <source srcset="assets/img/gallery/gallery-5-medium.webp" media="(max-width: 1024px)" type="image/webp">
+        <!-- Imagem para telas grandes -->
+        <source srcset="assets/img/gallery/gallery-5-large.webp" media="(min-width: 1025px)" type="image/webp">
+        <!-- Fallback -->
+        <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="Descrição da imagem">
+      </picture>
+      </a>
+      </div>
+            <div class="swiper-slide">
+          <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6-large.webp">
+      <picture>
+        <!-- Imagem para telas pequenas -->
+        <source srcset="assets/img/gallery/gallery-6-small.webp" media="(max-width: 600px)" type="image/webp">
+        <!-- Imagem para telas médias -->
+        <source srcset="assets/img/gallery/gallery-6-medium.webp" media="(max-width: 1024px)" type="image/webp">
+        <!-- Imagem para telas grandes -->
+        <source srcset="assets/img/gallery/gallery-6-large.webp" media="(min-width: 1025px)" type="image/webp">
+        <!-- Fallback -->
+        <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="Descrição da imagem">
+     </picture>
+     </a>
+     </div>
+            <div class="swiper-slide">
+         <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7-large.webp">
+      <picture>
+        <!-- Imagem para telas pequenas -->
+        <source srcset="assets/img/gallery/gallery-7-small.webp" media="(max-width: 600px)" type="image/webp">
+        <!-- Imagem para telas médias -->
+        <source srcset="assets/img/gallery/gallery-7-medium.webp" media="(max-width: 1024px)" type="image/webp">
+        <!-- Imagem para telas grandes -->
+        <source srcset="assets/img/gallery/gallery-7-large.webp" media="(min-width: 1025px)" type="image/webp">
+        <!-- Fallback -->
+        <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="Descrição da imagem">
+      </picture>
+      </a>
+      </div>
+            <div class="swiper-slide">
+          <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8-large.webp">
+      <picture>
+        <!-- Imagem para telas pequenas -->
+        <source srcset="assets/img/gallery/gallery-8-small.webp" media="(max-width: 600px)" type="image/webp">
+        <!-- Imagem para telas médias -->
+        <source srcset="assets/img/gallery/gallery-8-medium.webp" media="(max-width: 1024px)" type="image/webp">
+        <!-- Imagem para telas grandes -->
+        <source srcset="assets/img/gallery/gallery-8-large.webp" media="(min-width: 1025px)" type="image/webp">
+        <!-- Fallback -->
+        <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="Descrição da imagem">
+      </picture>
+      </a>
+      </div>
           <div class="swiper-pagination"></div>
         </div>
 
